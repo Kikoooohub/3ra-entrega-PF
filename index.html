@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Blog sobre la vida de la juventud y los problemas que se enfrentan a Diario.Ayuda,informaion y mas">
+    <meta name="keywords"
+        content="blog, juventud, vida diaria, artículos, consejos, bienestar, generación joven, DailyBlog">
+    <meta name="geo.region" content="ES">
+    <meta name="geo.placename" content="España">
+    <meta name="author" content="DailyBlog">
+
+    <!--Fontawesome--------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--CSS styles---------------------------->
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!--JS script------------------------------>
+    <script defer src="./js/script.js"></script>
+
+    <title>Daily Blog</title>
+
+
+</head>
+
+<body class="Body">
+    <!--Header-->
+
+    <header class="Header">
+        <div class="Header-wrapper">
+            <h1 class="HeaderLogoTitle"> <a class="Header-a" href="index.html">
+                    <span class="Header-span">Daily</span>Blog</a>
+
+            </h1>
+        </div>
+        <nav class="Nav">
+            <ul class="Nav-ul">
+                <li class="Nav-li"><a class="Nav-a" href="acerca-de.html">Acerca de</a></li>
+                <li class="Nav-li"><a class="Nav-a" href="faq.html">FAQ</a></li>
+                <li class="Nav-li"><a class="Nav-a" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Titulo princpipal de la pagina(fuera de Main,porque me rompe la seccion de Main,la solucion mas rapida fue ponerlo por fuera del main :)-->
+    <div class="Wrapper">
+        <h2 class="Wrapper-h2">Bienvenidos a DailyBlog</h2>
+        <p class="Wrapper-p">En este blog encontraras articulos sobre la vida diaria de la nueva
+            generacion.</p>
+    </div>
+    <main>
+        <!--Primera seccion-->
+        <section class="Main-section">
+            <ul class="Main-ul" id="news-carousel">
+                <li class="Main-li">
+                    <a href="post.html?noticia=redes-sociales" class="Main-a">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <img src="./img/instagramimg.webp" alt="social media" class="Main-img Main-img--main">
+                        <p class="Main-p">SocialMedia</p>
+                        <h2 class="Main-h2">Adiccion a redes sociales.Fin del pensamiento critico?</h2>
+                    </a>
+                    <!--<button class="Main-section-ul-li-a-btn">
+                        <span class="material-symbols-rounded">arrow_forward</span>
+                    </button>-->
+                </li>
+                <li class="Main-li">
+                    <a href="post.html?noticia=vapers" class="Main-a">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <img src="./img/vape.webp" alt="social media" class="Main-img Main-img--main">
+                        <p class="Main-p">Juventud</p>
+                        <h2 class="Main-h2">Adiccion a los vapers.Que problema causan?</h2>
+                    </a>
+                    <!--<button class="Main-section-ul-li-a-btn">
+                        <span class="material-symbols-rounded">arrow_forward</span>
+                    </button>-->
+                </li>
+                <li class="Main-li">
+                    <a href="post.html?noticia=oportunidades" class="Main-a">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <img src="./img/youth.webp" alt="social media" class="Main-img Main-img--main">
+                        <p class="Main-p">Oportunidades</p>
+                        <h2 class="Main-h2">La busqueda de trabajo para los jovenes.Una peli de horror?
+                        </h2>
+                    </a>
+                    <!--<button class="Main-section-ul-li-a-btn">
+                        <span class="material-symbols-rounded">arrow_forward</span>
+                    </button>-->
+                </li>
+                <li class="Main-li">
+                    <a href="post.html?noticia=finanzas" class="Main-a">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <img src="./img/money.webp" alt="social media" class="Main-img Main-img--main">
+                        <p class="Main-p">Finanzas</p>
+                        <h2 class="Main-h2">Como manejan el dinero la nueva generacion?Mejor o peor?
+                        </h2>
+                    </a>
+                    <!--<button class="Main-section-ul-li-a-btn">
+                        <span class="material-symbols-rounded">arrow_forward</span>
+                    </button>-->
+                </li>
+                <li class="Main-li">
+                    <a href="post.html?noticia=relaciones" class="Main-a">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <img src="./img/peoplegroup.webp" alt="social media" class="Main-img Main-img--main">
+                        <p class="Main-p">Relaciones</p>
+                        <h2 class="Main-h2">Evolución o Revolución de Género?Hasta donde llegara?</h2>
+
+                    </a>
+                    <!--<button class="Main-section-ul-li-a-btn">
+                        <span class="material-symbols-rounded">arrow_forward</span>
+                    </button>-->
+                </li>
+            </ul>
+
+            <a class="Main-btn" href="contacto.html">Siempre informado</a>
+
+        </section>
+
+
+        <!--Segunda seccion-->
+        <article class="Article">
+            <h2 class="Article-h2">Ultimas Publicaciones</h2>
+            <p class="Article-p Article-p--active">Aqui pueden leer sobre las Publicaciones mas populares de la semana
+                pasada</p>
+            <ul class="Article-ul">
+                <li class="Article-li">
+                    <img src="./img/ai.webp" alt="inteligencia artifiacial" class="Article-img">
+                    <h3 class="Article-h3"> Tecnológicas y su Impacto en la Juventud.</h3>
+                    <p class="Article-p">innovaciones tecnológicas han transformado la vida de los jóvenes, influyendo
+                        en su educación, comunicación y estilo de vida. Desde la inteligencia artificial hasta las redes
+                        sociales, la tecnología ha mejorado el acceso a la información, pero también plantea desafíos
+                        como la adicción digital y la privacidad en línea. Este tema analiza cómo la tecnología moldea
+                        el futuro de la juventud y su desarrollo social, académico y emocional.</p>
+
+
+                    <!--<button class="Main-article-ul-li-btn">Leer mas</button>-->
+                </li>
+                <li class="Article-li">
+                    <img src="./img/gym.webp" alt="deporte" class="Article-img Article-img--article">
+                    <h3 class="Article-h3">El impacto de la contaminación del aire en la salud humana y el cambio
+                        climático</h3>
+                    <p class="Article-p">La contaminación del aire está destruyendo nuestra salud y el planeta. Cada
+                        día, respiramos un aire cargado de sustancias tóxicas que provocan enfermedades respiratorias,
+                        problemas cardíacos y hasta reducen nuestra esperanza de vida.</p>
+
+
+
+                    <!--<button class="Main-article-ul-li-btn">Leer mas</button>-->
+
+
+
+
+                </li>
+                <li class="Article-li">
+                    <img src="./img/mentalhealth-2.webp" alt="salud mental" class="Article-img Article-img--article">
+                    <h3 class="Article-h3">Salud Mental y Bienestar de los Jóvenes</h3>
+                    <p class="Article-p">La juventud es una etapa de cambios y desafíos, pero también de mucha presión.
+                        Ansiedad, estrés y depresión afectan a más jóvenes que nunca, impulsados por las redes sociales,
+                        las expectativas y un mundo en constante movimiento.
+
+                        Sin embargo, hablar de salud mental ya no es un tabú. Cada vez más personas buscan ayuda,
+                        practican el autocuidado y encuentran apoyo en la comunidad. La clave está en normalizar el
+                        bienestar emocional y construir espacios donde los jóvenes puedan expresarse sin miedo. ¡El
+                        cambio empieza con una conversación!</p>
+
+                    <!--<button class="Main-article-ul-li-btn">Leer mas</button>-->
+
+
+                </li>
+            </ul>
+
+            <a class="Main-btn" href="contacto.html">Siempre informado</a>
+
+
+        </article>
+
+
+        <!--<button>
+            <a href="./contacto.html" class="Main-btn Main-btn--btn">Quiero recbir notificaciones</a>
+        </button>-->
+
+
+
+        <section class="Main-section">
+            <h2 class="Main-h2--consejos">Consejos semanales</h2>
+            <ul class="Main-ul">
+                <li class="Main-li Main-li--consejos">Organiza tu tiempo<i class="fa-solid fa-calendar-days"></i>
+                    <p class="Main-p Main-p--consejos"> La planificación es clave para mantener un equilibrio entre
+                        estudios, trabajo, amigos y tiempo personal. </p>
+                </li>
+                <li class="Main-li Main-li--consejos">Cuida tu salud mental y emocional<i
+                        class="fa-solid fa-hospital"></i>
+                    <p class="Main-p Main-p--consejos">La juventud es una etapa de muchos cambios. No dudes en pedir
+                        ayuda cuando lo necesites. Practicar la meditación o tomar un descanso puede hacer maravillas
+                        para tu bienestar.</p>
+                </li>
+                <li class="Main-li Main-li--consejos">Haz ejercicio regurlarmente<i class="fa-solid fa-dumbbell"></i>
+                    <p class="Main-p Main-p--consejos">El cuerpo y la mente están conectados. Mantenerte activo te
+                        ayudará a liberar estrés, sentirte más energético y mejorar tu estado de ánimo.</p>
+                </li>
+            </ul>
+        </section>
+
+
+
+        <section class="Main-section">
+            <h2 class="Main-h2 Main-h2--formulario">Deseas dejar un comentario sobre algun tema que te llamo la
+                atencion?
+            </h2>
+            <form id="comment-form" class="Main-form">
+                <label class="Main-label" for="user-name">Tu nombre:</label>
+                <input class="Main-input" type="text" id="user-name" name="user-name" placeholder="Escribe tu nombre"
+                    required>
+
+                <label class="Main-label" id="user-email">Tu correo (opcional):</label>
+                <input class="Main-input" type="email" id="user" name="user-email"
+                    placeholder="Escribe tu correo (opcional)">
+
+                <label class="Main-label" id="user-age">Fecha de Nacimiento:</label>
+                <input class="Main-input" type="date" id="date" name="date" required>
+
+                <label class="Main-label" id="topic-news">Elige el tema:</label>
+                <select class="Main-select" name="topic" id="topic" required>
+                    <option class="Main-option Main-option--isActive" value="" disabled selected>Selecciona un tema
+                    </option>
+                    <option class="Main-option" value="IA">Inteligencia Artificial(IA)</option>
+                    <option class="Main-option" value="sport">Deporte</option>
+                    <option class="Main-option" value="salud">Salud</option>
+                    <option class="Main-option" value="finanz">Finanzas</option>
+                    <option class="Main-option" value="relacion">Relaciones</option>
+                    <option class="Main-option" value="politica">Política</option>
+                    <option class="Main-option" value="tecn">Tecnología</option>
+                    <option class="Main-option" value="redes">Redes Sociales</option>
+                    <option class="Main-option" value="oport">Oportunidades</option>
+                    <option class="Main-option" value="otro">Otro</option>
+
+                </select>
+
+                <label class="Main-label" for="comment-text">Tu comentario:</label>
+                <textarea class="Main-textarea" id="comment-text" name="comment-text"
+                    placeholder="Escribe tu comentario aquí..." rows="5" required></textarea>
+
+                <button type="submit" class="Btn">Enviar Comentario</button>
+            </form>
+
+        </section>
+
+
+        <div class="Container-dark" id="theme-toggle">
+            <button class="Container-btn">
+                <i class="fa-solid fa-moon"></i></button>
+        </div>
+    </main>
+
+
+
+
+
+    <!--Pie de pagina-->
+    <footer class="Footer">
+        <section class="Footer-section">
+            <h2 class="Footer-h2">Mantente Informado</h2>
+            <ul class="Footer-ul">
+
+
+                <li class="Footer-li">
+                    <a class="Footer-a" href="acerca-de.html">
+                        Acerca de
+                    </a>
+                </li>
+                <li class="Footer-li">
+                    <a class="Footer-a" href="faq.html">
+                        FAQ
+                    </a>
+                </li>
+
+                <li class="Footer-li">
+                    <a class="Footer-a" href="contacto.html">
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+
+
+
+            <ul class="Footer-ul">
+                <li class="Footer-li"><a class="Footer-a" href="https://x.com/" target="_blank"><i
+                            class="fa-brands fa-twitter"></i></a></li>
+                <li class="Footer-li"><a class="Footer-a" href="https://www.facebook.com/" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a></li>
+                <li class="Footer-li"><a class="Footer-a" href="https://www.instagram.com/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+            <div class="Footer-section Footer-section--copyright">
+                <div class="Footer-copyright">&copy; 2025 DailyBlog</div>
+            </div>
+        </section>
+
+    </footer>
+</body>
+
+</html>

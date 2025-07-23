@@ -1,0 +1,2434 @@
+/*Import Google style -Inter*/
+/*@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');*/
+
+
+:root {
+    --color-primary: #0a3a39;
+    --color-secondary: rgb(210, 255, 255);
+    --color-accent: #128280;
+    --color-text: #0a3a39;
+    --color-btn: #0e4f4e;
+    --font-family-base: "Inter", sans-serif;
+    --font-size-base: 1rem;
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+
+}
+
+
+
+* {
+    font-family: var(--font-family-base);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.Body {
+    background-color: var(--color-secondary);
+    transition: background-color 0.5s, color 0.3s;
+    color: var(--color-text);
+    height: 100vh;
+
+}
+
+
+
+.Header {
+    background-color: var(--color-accent);
+    color: white;
+    height: 60px;
+    padding: var(--spacing-small) 0;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+
+}
+
+.Header-wrapper {
+    float: left;
+    height: inherit;
+
+}
+
+.HeaderLogoTitle {
+    margin: var(--spacing-small);
+    text-decoration: none;
+    color: white;
+
+}
+
+.Header-span {
+    color: #03005b;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.Header-a {
+    text-decoration: none;
+    color: white;
+}
+
+.Nav {
+    padding: 0;
+    margin: 0;
+
+}
+
+
+
+.Nav-ul {
+    float: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+/*.Nav-ul-ul{
+    gap:20px;
+}*/
+
+.Nav-li {
+    float: right;
+    list-style: none;
+    margin: 0;
+
+
+}
+
+.Nav-a {
+    display: block;
+    padding: var(--spacing-medium);
+    font-size: 1.2rem;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.5s, padding 0.5s, border-radius 0.5s;
+}
+
+.Nav-a:hover {
+    background-color: var(--color-btn);
+    padding: calc(var(--spacing-medium) - 0.5rem);
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.Wrapper-h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.8rem;
+
+    font-weight: 800;
+
+
+}
+
+.Wrapper-p {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.3rem;
+
+    font-weight: 600;
+
+}
+
+
+.Main {
+    background-color: var(--color-secondary);
+}
+
+
+.Main-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    padding: 40px;
+}
+
+.Main-ul {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+
+}
+
+
+.Main-li {
+    width: 26rem;
+    max-width: 100%;
+    list-style: none;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 1s ease;
+    border: 2px solid #0a3a39;
+
+
+}
+
+/*--------Parde JS Carousel estilos----------*/
+
+#news-carousel.active-slide {
+    transform: scale(1.1);
+    z-index: 1;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+#news-carousel .inactive-slide {
+    transform: scale(0.9);
+    /* Reduce el tamaño de los otros slides */
+    opacity: 0.7;
+    /* Reduce la visibilidad de los otros slides */
+    transition: opacity 0.5s ease-in-out;
+}
+
+/*----------------------------------------*/
+
+
+.Main-a {
+
+    display: block;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    min-height: 80%;
+    color: #333;
+
+
+    /*mantener siempre una altura de 80% del contenedor en el que se encuentra.*/
+
+
+
+}
+
+.Main-img--main {
+    max-width: 100%;
+    aspect-ratio: 16/9;
+    /*mantener siempre una proporción de 16:9, sin importar el tamaño del contenedor en el que se encuentre.*/
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 10px 0 10px;
+
+
+
+
+
+}
+
+.Main-p {
+    /*position: relative;
+left:25px;
+*/
+    color: #0a3a39;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 550;
+    margin: 16px 0 18px;
+    background: var(--color-primary);
+    width: fit-content;
+    border-radius: 50px;
+    color: white;
+
+
+}
+
+.Main-h2 {
+    font-size: 1.19rem;
+    color: #000;
+    font-weight: 700;
+}
+
+/*.Main-section-ul-li-a-btn {
+    height: 39px;
+    width: 38px;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    border: 3.5px solid #27848f;
+    color: #115b58;
+    cursor: pointer;
+    background: none;
+    transform: rotate(-90deg);
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------*/
+/*    BTN SIEMPRE INFORMADO   */
+/*----------------------------*/
+
+.Main-btn {
+    text-decoration: none;
+    margin: 5rem;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 600;
+    background-color: #128280;
+    border-radius: 20px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.Main-btn:hover {
+
+    background-color: #0d5855;
+    transition: background-color 0.3s ease-in-out;
+
+
+}
+
+.Main-li-btn {
+    list-style: none;
+    margin: 0 20px;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------*/
+/*       Noticas dentro de Caroussel         */
+/*------------------------------------------*/
+
+
+.Main-ul--publicaciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+
+}
+
+.Main-li--publicaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100rem;
+    margin: 4em;
+    padding: 4em;
+    background: #f4f9fb;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 1s ease;
+    border: 2px solid #0a3a39;
+}
+
+
+
+.Main-h2--publicaciones {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin: 20px;
+
+    text-align: center;
+    color: var(--color-text);
+    position: relative;
+    left: 0.5em;
+
+
+
+}
+
+
+
+.Main-img--publicaciones {
+    max-width: 35rem;
+    border-radius: 20px;
+    object-fit: cover;
+
+
+}
+
+.Main-p--publicaciones {
+    margin: 14px;
+    text-align: center;
+    background-color: #f4f9fb;
+    color: var(--color-text);
+    font-size: 1.1rem;
+
+
+}
+
+.Main-img--finanzas {
+    height: 22rem;
+    border-radius: 10px;
+    width: 70%;
+
+
+}
+
+.Main-img--oportunidades {
+    max-width: 35rem;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    height: 20rem;
+
+}
+
+.Main-img--vapers {
+    max-width: 35rem;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    height: 20rem;
+
+
+}
+
+.Main-img--relaciones {
+    max-width: 35rem;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    height: 22rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------*/
+/*            Articulo               */
+/*-----------------------------------*/
+
+.Article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 20px;
+    /*border-bottom: 1px solid gray;*/
+
+    /*border: solid #ff520e;*/
+    /*Para ver la medida de la seccion,si sobresale o no*/
+}
+
+.Article-p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 20px;
+    text-align: right;
+    color: var(--color-text);
+    text-align: center;
+    gap: 20px;
+}
+
+.Article-p--active {
+    font-weight: 600;
+}
+
+.Article-h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin: 20px;
+
+}
+
+.Article-h3 {
+    color: var(--color-text);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.Article-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin: 20px;
+}
+
+.Article-li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80rem;
+    height: 28rem;
+    margin: 20px;
+    padding: 22px;
+    background: #f4f9fb;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 1s ease;
+    border: 2px solid #0a3a39;
+
+}
+
+.Article-img {
+    width: 100%;
+    max-width: 30em;
+    border-radius: 10px;
+
+}
+
+.Article-img--article {
+    max-width: 24em;
+    max-height: 20rem;
+    border-radius: 25px;
+    padding: 20px;
+
+}
+
+
+
+
+
+
+
+/*------------------------------------*/
+/*       Consejos Landing page        */
+/*------------------------------------*/
+
+
+
+.Main-h2--consejos {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin: 20px;
+    text-align: center;
+
+}
+
+.Main-ul {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    margin: 5rem;
+    gap: 20px;
+    position: relative;
+    /* para centrarlos */
+    left: 2rem;
+
+
+}
+
+.Main-li--consejos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f4f9fb;
+    border-radius: 10px;
+    border-color: #072d2d;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    color: #0a3a39;
+    font-size: 1.6rem;
+    gap: 20px;
+    padding: 20px;
+    margin: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+
+
+
+
+.Main-p--consejos {
+    text-transform: lowercase;
+    margin: 10px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    line-height: 1.5;
+    text-align: center;
+    background: none;
+
+
+}
+
+
+/*------------------------------------*/
+/*      Formulario Landing Page       */
+/*------------------------------------*/
+
+.Main-h2--formulario {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 20px;
+    text-align: center;
+    color: var(--color-text);
+    font-weight: 800;
+    text-align: center;
+    margin: 20px;
+}
+
+.Btn {
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 5rem;
+    background-color: var(--color-accent);
+    border-radius: 20px;
+    border-color: none;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.Btn:hover {
+    background-color: #0d5855;
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+
+
+
+
+
+.Main-select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #03005b;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    color: darkgrey;
+}
+
+.Main-option {
+
+    color: #f4f9fb;
+    padding: 20px;
+    border-radius: 2px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #000000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #f4f9fb;
+
+}
+
+.Main-textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #03005b;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 10px 0;
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    resize: vertical;
+
+}
+
+.Main-option--isActive {
+    background-color: var(--color-accent);
+    border-bottom: 3px solid #f4f9fb;
+
+
+}
+
+
+
+
+
+
+/*-----------------------------------------*/
+/*      Acerca de Nosotros (About)         */
+/*-----------------------------------------*/
+
+.Main--acerca-de {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 50px;
+}
+
+.Main-h2--acerca-de {
+    font-size: 2.8rem;
+    color: #0a3a39;
+    font-weight: 800;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 88px;
+    left: 0.6em;
+
+
+
+
+}
+
+.Main-section--acerca-de {
+    font-size: 2.8rem;
+    color: #0a3a39;
+    font-weight: 800;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 88px;
+}
+
+.Main-ul--acerca-de {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px;
+    padding: 20px;
+    width: 80%;
+
+}
+
+.Main-li--acerca-de {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f4f9fb;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    color: #0a3a39;
+    font-size: 1.6rem;
+    gap: 20px;
+    padding: 20px;
+    width: fit-content;
+    margin: 30px;
+    font-weight: 700;
+}
+
+
+.Main-p--acerca-de {
+    /*text-transform: lowercase;*/
+    margin: 10px;
+    font-weight: 550;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    background-color: var(--color-accent);
+    padding: 45px;
+    box-shadow: var(--color-accent) 0px 5px 10px 0px;
+
+}
+
+.Main-figure {
+    width: 25Wrem;
+    height: 20rem;
+    border-radius: 25%;
+    margin: 30px;
+    box-shadow: 0 5px 10px rgba(9, 61, 73, 0.5);
+}
+
+
+.Main-figcaption {
+    font-size: 0.95rem;
+    color: #0a3a39;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+    bottom: 20px;
+}
+
+
+
+
+/* ------------------------------*/
+/*          Acordeon            */
+/* ----------------------------*/
+
+
+.Main-section--faq {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.Main-h2--faq {
+    font-size: 3rem;
+    margin: 1rem 0rem;
+    color: var(--color-text);
+
+
+
+}
+
+.Main-p--faq {
+    font-size: 1.4rem;
+    margin: 3rem;
+    line-height: 1.5;
+    color: var(--color-text);
+    background: var(--color-secondary);
+    padding: 15px;
+}
+
+.Container {
+    width: 1250px;
+    max-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    border: 2px solid #000;
+    transition: transform 0.6s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: auto;
+    position: relative;
+    bottom: 30px;
+
+
+}
+
+.Container:hover {
+    /*transform: scale(1.05);*/
+    border: 3px solid #120064;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+
+
+
+
+
+}
+
+.Container-pregunta {
+    font-size: 1.6rem;
+    color: #072d2d;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    transition: padding 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    padding: 2px;
+
+
+}
+
+
+
+
+.Container-pregunta:hover {
+    color: #120064;
+    cursor: pointer;
+    transform: scale(1.05);
+    border: 2px solid #120064;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.h3-pregunta {
+    font-size: 1.4rem;
+}
+
+.Container-respuesta {
+    font-size: 1.1rem;
+    font-weight: 600;
+    min-width: 700px;
+    transition: max-height 0.3s ease-in-out;
+    display: none;
+    color: #072d2d;
+    font-weight: 600;
+
+
+}
+
+
+.Container-respuesta.visible {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------*/
+/*            Contacto               */
+/*-----------------------------------*/
+
+.Main-section--contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 50px;
+    height: 100vh;
+}
+
+.Main-h2--contacto {
+    font-size: 2rem;
+    color: #0a3a39;
+    font-weight: 800;
+    margin: 20px;
+    text-align: center;
+}
+
+.Main-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 100px;
+    background: #f4f9fb;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid #0a3a39;
+}
+
+.Main-form:hover {
+    box-shadow: 0 10px 10px rgba(19, 0, 159, 0.5);
+    transition: 0.5s ease-in-out;
+
+}
+
+.Main-label {
+    font-size: 1.2rem;
+    color: #072d2d;
+    font-weight: 600;
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+.Main-input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px;
+    display: inline-block;
+    border: 1.5px solid #03005b;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.Main-input:hover {
+    background-color: rgb(201, 199, 199);
+    transition: background-color 0.4s ease-in-out;
+}
+
+.Main-input--isActive {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 700;
+    background-color: #128280;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 25px;
+    margin: 15px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.Main-input--isActive:hover {
+    background-color: #0a3a39;
+    color: #fff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.4s ease-in-out;
+
+}
+
+
+
+
+/*------------------------------------*/
+/*       BTN-DARK                     */
+/*------------------------------------*/
+
+
+
+
+
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+footer.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+main.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Modo oscuro para componentes principales */
+.dark-mode .Main-section,
+.dark-mode .Main-ul,
+.dark-mode .Main-li,
+.dark-mode .Main-a,
+.dark-mode .Main-btn,
+.dark-mode .Main-li--publicaciones,
+.dark-mode .Main-ul--publicaciones,
+.dark-mode .Main-h2--publicaciones,
+.dark-mode .Main-p--publicaciones,
+.dark-mode .Main-img--publicaciones,
+.dark-mode .Main-img--finanzas,
+.dark-mode .Main-img--oportunidades,
+.dark-mode .Main-img--vapers,
+.dark-mode .Main-img--relaciones,
+.dark-mode .Main-h2,
+.dark-mode .Main-p,
+.dark-mode .Main-h2--consejos,
+.dark-mode .Main-li--consejos,
+.dark-mode .Main-p--consejos,
+.dark-mode .Main-form,
+.dark-mode .Main-label,
+.dark-mode .Main-input,
+.dark-mode .Main-textarea,
+.dark-mode .Main-select,
+.dark-mode .Main-option,
+.dark-mode .Main-h2--formulario,
+.dark-mode .Main-section--acerca-de,
+.dark-mode .Main-ul--acerca-de,
+.dark-mode .Main-li--acerca-de,
+.dark-mode .Main-p--acerca-de,
+.dark-mode .Main-figure,
+.dark-mode .Main-figcaption,
+.dark-mode .Article,
+.dark-mode .Article-li,
+.dark-mode .Article-h2,
+.dark-mode .Article-h3,
+.dark-mode .Article-p,
+.dark-mode .Article-ul,
+.dark-mode .Article-img,
+.dark-mode .Article-img--article,
+.dark-mode .Footer,
+.dark-mode .Footer-h2,
+.dark-mode .Footer-section,
+.dark-mode .Footer-ul,
+.dark-mode .Footer-li,
+.dark-mode .Footer-a,
+.dark-mode .Footer-copyright,
+.dark-mode .Container,
+.dark-mode .Container-pregunta,
+.dark-mode .Container-respuesta {
+    background-color: #222 !important;
+    color: #fff !important;
+    border-color: #444 !important;
+}
+
+.dark-mode .Main-a,
+.dark-mode .Main-btn,
+.dark-mode .Footer-a {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+.dark-mode .Main-btn:hover,
+.dark-mode .Footer-a:hover {
+    background-color: #444 !important;
+    color: #fff !important;
+}
+
+.dark-mode .Main-input,
+.dark-mode .Main-textarea,
+.dark-mode .Main-select {
+    background-color: #333 !important;
+    color: #fff !important;
+    border-color: #555 !important;
+}
+
+.dark-mode .Main-option {
+    background-color: #444 !important;
+    color: #fff !important;
+}
+
+.dark-mode .Main-img--publicaciones,
+.dark-mode .Main-img--finanzas,
+.dark-mode .Main-img--oportunidades,
+.dark-mode .Main-img--vapers,
+.dark-mode .Main-img--relaciones,
+.dark-mode .Article-img,
+.dark-mode .Article-img--article {
+    box-shadow: 0 5px 10px rgba(255,255,255,0.1) !important;
+    border-color: #444 !important;
+}
+
+.dark-mode .Container-btn {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+.dark-mode .Container-btn:hover {
+    background-color: #444 !important;
+    color: #fff !important;
+}
+
+.dark-mode .Header {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .Btn {
+    background-color: #333 !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 15px !important;
+    cursor: pointer !important;
+}
+
+.dark-mode .Main-input--isActive{
+    background-color: #333 !important;
+    color: #fff !important;
+    border-color: #555 !important;
+}
+
+.dark-mode .Main--acerca-de{
+    background-color: #121212 !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .Main-p{
+    box-shadow: 0 5px 10px rgba(255,255,255,0.1) !important;
+}
+/* Estilos para el botón */
+.Container-btn {
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    padding: 22px 25px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.Container-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+.Container-dark {
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+
+
+
+}
+
+.Container-btn-dark {
+    background-color: black;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    padding: 25px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/*-----------------------------------*/
+/*            Footer                 */
+/*-----------------------------------*/
+
+.Footer {
+    background-color: #128280;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.Footer-h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 800;
+    background-color: #f4f9fb;
+    color: #072d2d;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+.Footer-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    gap: 5px;
+
+}
+
+.Footer-ul {
+    display: flex;
+    list-style: none;
+    margin: 20px;
+    gap: 10px;
+}
+
+.Footer-li {
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.Footer-a {
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+
+
+
+}
+
+.Footer-a:hover {
+    color: #03005b;
+    transition: color 0.2s ease-in-out;
+    transform: scale(1.05);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------*/
+/*            MEDIA QUERY            */
+/*-----------------------------------*/
+
+
+
+
+
+/* -------- DESKTOP (min-width: 768px) -------- */
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .Header {
+        height: 55px;
+        padding: var(--spacing-small) 10px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .Nav-ul,
+    .Nav-li {
+
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+
+    }
+
+    .Nav-a {
+
+        font-size: 1rem;
+    }
+
+    .Wrapper-h2 {
+        font-size: 2.2rem;
+        margin: 16px 0;
+    }
+
+    .Wrapper-p {
+        font-size: 1.1rem;
+        margin: 16px 10px;
+    }
+
+    .Main-section {
+        padding: 30px 20px;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .Main-ul {
+        flex-direction: column;
+        max-width: 80%;
+        padding: 10px;
+        gap: 20px;
+        margin: 0;
+        right: 20;
+
+    }
+
+    .Main-li {
+        width: 22rem;
+        margin: 15px;
+        padding: 16px;
+        text-align: center;
+
+    }
+
+    .Main-p {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    .Main-h2 {
+        font-size: 1.05rem;
+    }
+
+    .Main-li--publicaciones {
+        width: 90%;
+        height: auto;
+        margin: 2em;
+        padding: 2em;
+    }
+
+    .Main-h2--publicaciones {
+        font-size: 2.2rem;
+        left: 0;
+        margin: 16px;
+    }
+
+    .Main-img--publicaciones,
+    .Main-img--oportunidades,
+    .Main-img--vapers,
+    .Main-img--relaciones {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .Main-img--finanzas {
+        width: 90%;
+        height: auto;
+    }
+
+    .Main-p--publicaciones {
+        font-size: 1rem;
+        margin: 12px;
+    }
+
+    .Article {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .Article-h2 {
+        font-size: 2.2rem;
+    }
+
+    .Article-h3 {
+        font-size: 1.6rem;
+    }
+
+    .Article-p {
+        font-size: 1.1rem;
+        margin: 16px;
+    }
+
+    .Article-li {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .Article-img {
+        max-width: 70%;
+    }
+
+    .Article-img--article {
+        max-width: 70%;
+        padding: 10px;
+    }
+
+    .Main-h2--consejos,
+    .Main-h2--formulario,
+    .Main-h2--acerca-de,
+    .Main-h2--faq,
+    .Main-h2--contacto {
+        font-size: 2.2rem;
+        margin: 15px;
+    }
+
+    .Main-ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        gap: 30px;
+        margin: 2rem;
+
+    }
+
+    .Main-li--consejos {
+        width: 90%;
+        font-size: 1.3rem;
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .Main-p--consejos {
+        font-size: 1rem;
+    }
+
+    .Main-form {
+        width: 90%;
+        padding: 40px;
+    }
+
+    .Main-input,
+    .Main-textarea,
+    .Main-select {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .Btn {
+        font-size: 1rem;
+        margin: 3rem;
+        padding: 12px;
+    }
+
+    .Main--acerca-de,
+    .Main-section--contacto,
+    .Main-section--faq {
+        margin: 30px;
+        padding: 30px;
+    }
+
+    .Main-ul--acerca-de {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .Main-li--acerca-de {
+        width: 90%;
+        font-size: 1.3rem;
+        padding: 20px;
+    }
+
+    .Main-p--acerca-de {
+        font-size: 1rem;
+        padding: 25px;
+    }
+
+    .Main-figure {
+        width: 80%;
+        height: auto;
+        margin: 20px;
+    }
+
+    .Container {
+        width: 90%;
+        max-height: none;
+        padding: 15px;
+    }
+
+    .Container-pregunta {
+        font-size: 1.4rem;
+    }
+
+    .Container-respuesta {
+        font-size: 1rem;
+        min-width: auto;
+    }
+
+    .Container-btn {
+        padding: 18px 20px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .Container-dark {
+        padding: 8px;
+        margin: 15px;
+        bottom: 0;
+        right: 0;
+    }
+
+    .Container-btn-dark {
+        padding: 20px;
+    }
+
+    .Container-btn {
+        padding: 20px 22px;
+        bottom: 18px;
+        right: 18px;
+    }
+
+    .Container-dark {
+        padding: 10px;
+        margin: 18px;
+        bottom: 0;
+        right: 0;
+    }
+
+    .Container-btn-dark {
+        padding: 22px;
+    }
+
+    .Footer {
+        flex-direction: row;
+        padding: 18px;
+        text-align: center;
+    }
+
+    .Footer-h2 {
+        font-size: 1.4rem;
+        padding: 4px;
+    }
+
+    .Footer-section {
+        flex-direction: column;
+        margin: 8px;
+        padding: 12pxpx;
+        gap: 6px;
+    }
+
+    .Footer-ul {
+        flex-direction: row;
+        margin: 14px 0;
+        gap: 8px;
+    }
+
+    .Footer-li {
+        margin: 12px 0;
+        font-size: 1rem;
+    }
+
+    .Footer-a {
+        font-size: 1.2rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* -------- DESKTOP (min-width: 1024px) -------- */
+
+
+
+
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+
+
+
+
+    .Header {
+        height: 60px;
+        padding: var(--spacing-small) 20px;
+        width: 100%;
+
+    }
+
+    .Nav-ul,
+    .Nav-li {
+        float: right;
+        gap: 10px;
+    }
+
+    .Nav-a {
+        padding: var(--spacing-small) 1.1rem;
+        font-size: 1.15rem;
+    }
+
+    .Wrapper-h2 {
+        font-size: 2.5rem;
+    }
+
+    .Wrapper-p {
+        font-size: 1.2rem;
+    }
+
+    .Main-section {
+        gap: 24px;
+
+    }
+
+
+
+    .Main-li {
+        width: 20rem;
+        margin: 18px;
+        padding: 20px;
+    }
+
+    .Main-p {
+        font-size: 0.95rem;
+        padding: 8px 16px;
+    }
+
+    .Main-h2 {
+        font-size: 1.15rem;
+    }
+
+
+
+    .Main-li--publicaciones {
+        width: 70%;
+        height: auto;
+        margin: 3em;
+        padding: 3em;
+    }
+
+    .Main-h2--publicaciones {
+        font-size: 2.6rem;
+        left: 0.2em;
+    }
+
+    .Main-img--publicaciones,
+    .Main-img--oportunidades,
+    .Main-img--vapers,
+    .Main-img--relaciones {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .Main-img--finanzas {
+        width: 85%;
+        height: auto;
+    }
+
+    .Main-p--publicaciones {
+        font-size: 1.05rem;
+        margin: 12px;
+    }
+
+    .Article {
+        padding: 30px;
+        margin: 16px;
+    }
+
+    .Article-h2 {
+        font-size: 2.6rem;
+    }
+
+    .Article-h3 {
+        font-size: 1.8rem;
+    }
+
+    .Article-p {
+        font-size: 1.2rem;
+        margin: 18px;
+    }
+
+    .Article-li {
+        width: 85%;
+        height: auto;
+        padding: 24px;
+    }
+
+    .Article-img {
+        max-width: 70%;
+    }
+
+    .Article-img--article {
+        max-width: 70%;
+        padding: 14px;
+
+    }
+
+    .Main-h2--consejos,
+    .Main-h2--formulario,
+    .Main-h2--acerca-de,
+    .Main-h2--faq,
+    .Main-h2--contacto {
+        font-size: 2.6rem;
+        margin: 20px;
+    }
+
+    .Main-ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin: 3rem;
+        left: 0;
+
+
+    }
+
+    .Main-li--consejos {
+        width: 40%;
+        font-size: 1.5rem;
+        padding: 18px;
+        margin: 20px;
+    }
+
+    .Main-p--consejos {
+        font-size: 1.1rem;
+    }
+
+    .Main-form {
+        width: 70%;
+        padding: 80px;
+    }
+
+    .Main-input,
+    .Main-textarea,
+    .Main-select {
+        font-size: 1.1rem;
+    }
+
+    .Btn {
+        font-size: 1.1rem;
+        padding: 14px;
+        margin: 4rem;
+    }
+
+    .Main--acerca-de,
+    .Main-section--contacto
+    {
+    margin: 40px;
+    padding: 40px;
+}
+
+.Main-section--faq {
+    padding: 40px;
+
+}
+
+.Main-ul--acerca-de {
+    width: 90%;
+}
+
+.Main-li--acerca-de {
+    width: 80%;
+    font-size: 1.4rem;
+    padding: 25px;
+}
+
+.Main-p--acerca-de {
+    font-size: 1.1rem;
+    padding: 35px;
+}
+
+.Main-figure {
+    width: 50%;
+    height: auto;
+}
+
+.Container {
+    width: 90%;
+    max-height: none;
+}
+
+.Container-pregunta {
+    font-size: 1.5rem;
+}
+
+.Container-respuesta {
+    font-size: 1.1rem;
+    min-width: 600px;
+}
+
+.Footer {
+    padding: 22px;
+}
+
+.Footer-h2 {
+    font-size: 1.6rem;
+    padding: 6px;
+}
+
+.Footer-section {
+    margin: 12px;
+    padding: 12px;
+    gap: 6px;
+}
+
+.Footer-ul {
+    gap: 12px;
+}
+
+.Footer-li {
+    margin: 8px;
+    font-size: 1.1rem;
+}
+
+.Footer-a {
+    font-size: 1.3rem;
+}
+
+}
+
+
+
+
+
+
+
+
+/* -------- TABLET (max-width: 768px) -------- */
+@media (max-width: 768px) {
+
+    .Header {
+        height: auto;
+        padding: var(--spacing-small);
+        text-align: center;
+    }
+
+    .Header-wrapper {
+        float: none;
+        display: flex;
+        justify-content: center;
+        height: auto;
+    }
+
+    .Nav-ul,
+    .Nav-li {
+        float: none;
+        text-align: center;
+        border: 1px solid #fff
+    }
+
+    .Main-section {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Main-li {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .Wrapper-h2 {
+        font-size: 2.2rem;
+    }
+
+    .Wrapper-p {
+        font-size: 1.1rem;
+    }
+
+    .Main-btn {
+        margin: 3rem auto;
+        padding: 12px;
+        font-size: 1rem;
+        display: block;
+        width: fit-content;
+    }
+
+
+    .Main-ul--publicaciones {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .Main-li--publicaciones {
+        width: 90%;
+        height: auto;
+        margin: 2em 0;
+        padding: 2em;
+    }
+
+    .Main-h2--publicaciones {
+        font-size: 2.2rem;
+        left: 0;
+    }
+
+    .Main-img--publicaciones,
+    .Main-img--oportunidades,
+    .Main-img--vapers,
+    .Main-img--relaciones {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .Main-img--finanzas {
+        width: 90%;
+        height: auto;
+    }
+
+    .Main-p--publicaciones {
+        font-size: 1rem;
+        margin: 12px;
+    }
+
+    .Article {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .Article-h2 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .Article-h3 {
+        font-size: 1.6rem;
+    }
+
+    .Article-p {
+        font-size: 1.1rem;
+        margin: 15px;
+    }
+
+    .Article-ul {
+        margin: 10px;
+        float: none;
+    }
+
+    .Article-li {
+        width: 95%;
+        height: auto;
+        margin: 15px 0;
+        padding: 20px;
+    }
+
+    .Article-img,
+    .Article-img--article {
+        max-width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    /* CONSEJOS */
+    .Main-ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 0;
+        left: 0;
+        gap: 30px;
+    }
+
+    .Main-li--consejos {
+        font-size: 1.4rem;
+        padding: 15px;
+        margin: 20px;
+        width: 90%;
+    }
+
+    .Main-p--consejos {
+        font-size: 1.05rem;
+    }
+
+    /* FORMULARIO */
+    .Btn {
+        margin: 3rem auto;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .Main-select,
+    .Main-textarea {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /* ACERCA DE NOSOTROS */
+    .Main--acerca-de {
+        margin: 30px;
+        padding: 20px;
+    }
+
+    .Main-h2--acerca-de,
+    .Main-section--acerca-de {
+        font-size: 2.2rem;
+        bottom: 50px;
+        left: 0;
+    }
+
+    .Main-ul--acerca-de {
+        width: 100%;
+        padding: 10px;
+        margin: 20px 0;
+    }
+
+    .Main-li--acerca-de {
+        width: 90%;
+        font-size: 1.4rem;
+    }
+
+    .Main-p--acerca-de {
+        font-size: 1.05rem;
+        padding: 30px;
+    }
+
+
+    /* FAQ / Acordeon */
+    .Main-section--faq {
+        padding: 30px;
+    }
+
+    .Main-h2--faq {
+        font-size: 2.2rem;
+    }
+
+    .Main-p--faq {
+        font-size: 1.2rem;
+        margin: 2rem;
+    }
+
+    .Container {
+        width: 90%;
+        max-height: none;
+        padding: 15px;
+    }
+
+    .Container-respuesta {
+        min-width: auto;
+        font-size: 1rem;
+    }
+
+    .Container-pregunta {
+        font-size: 1.4rem;
+    }
+
+    .Main-h2--consejos,
+    .Main-h2--formulario,
+    .Main-h2--acerca-de,
+    .Main-section--acerca-de,
+    .Main-h2--faq {
+        font-size: 1.6rem;
+        margin: 15px;
+    }
+
+    .Main-ul {
+        gap: 20px;
+        margin: 1rem 0;
+    }
+
+    .Main-li--consejos {
+        font-size: 1.2rem;
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .Main-p--consejos {
+        font-size: 1rem;
+    }
+
+    .Btn {
+        font-size: 1rem;
+        margin: 2rem auto;
+        padding: 12px;
+    }
+
+    .Main-select,
+    .Main-textarea {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    .Main-ul--acerca-de {
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .Main-li--acerca-de {
+        font-size: 1.2rem;
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .Main-p--acerca-de {
+        font-size: 1rem;
+        padding: 20px;
+    }
+
+    .Main-figure {
+        width: 70%;
+        height: auto;
+        border-radius: 10%;
+        margin: 15px;
+    }
+
+    .Main-figcaption {
+        font-size: 0.85rem;
+        bottom: 10px;
+    }
+
+    .Main-p--faq {
+        font-size: 1rem;
+        margin: 1rem;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .Container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .Container-pregunta {
+        font-size: 1.2rem;
+    }
+
+    .Container-respuesta {
+        font-size: 0.95rem;
+    }
+
+    .h3-pregunta {
+        font-size: 1.2rem;
+    }
+
+    .Main-ul,
+    .Footer-ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 1rem;
+    }
+
+    .Main-li--consejos,
+    .Main-li--acerca-de,
+    .Container {
+        width: 90%;
+        margin: 1rem auto;
+        padding: 1rem;
+    }
+
+    .Main-form {
+        width: 90%;
+        padding: 2rem;
+        margin: 1rem;
+    }
+
+    .Main-input,
+    .Main-textarea,
+    .Main-select {
+        font-size: 1rem;
+    }
+
+    .Container-respuesta {
+        min-width: 100%;
+        font-size: 1rem;
+    }
+
+    .Main-section--contacto {
+        padding: 1rem;
+        margin: 2rem 0;
+        height: auto;
+    }
+
+    .Btn {
+        margin: 2rem;
+        width: 80%;
+        padding: 1rem;
+    }
+
+    .Main-h2--consejos,
+    .Main-h2--formulario,
+    .Main-h2--acerca-de,
+    .Main-h2--faq,
+    .Main-h2--contacto {
+        font-size: 2rem;
+    }
+
+    .Container-btn,
+    .Container-btn-dark {
+        padding: 15px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+
+
+
+
+}
+
+/* -------- MOBILE (max-width: 480px) -------- */
+@media (max-width: 480px) {
+
+    .Header {
+        height: auto;
+        padding: var(--spacing-small);
+        text-align: center;
+    }
+
+    .Header-wrapper {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .HeaderLogoTitle {
+        margin: 0.5rem 0;
+        font-size: 1.2rem;
+    }
+
+    .Nav-ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .Nav-a {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .Main-section {
+        padding: 15px;
+    }
+
+    .Main-li {
+        width: 95%;
+        margin: 10px 0;
+    }
+
+    .Wrapper-h2 {
+        font-size: 1.8rem;
+    }
+
+    .Wrapper-p {
+        font-size: 1rem;
+    }
+
+    .Main-p {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+
+    .Main-h2 {
+        font-size: 1rem;
+    }
+
+    .Main-btn {
+        font-size: 0.95rem;
+        padding: 10px;
+        margin: 2rem auto;
+        width: 90%;
+        text-align: center;
+    }
+
+
+
+    .Main-li--publicaciones {
+        padding: 1.5em;
+        margin: 1.5em 0;
+    }
+
+    .Main-h2--publicaciones {
+        font-size: 1.8rem;
+        margin: 10px;
+    }
+
+    .Main-p--publicaciones {
+        font-size: 0.95rem;
+        margin: 10px;
+    }
+
+    .Main-img--publicaciones,
+    .Main-img--oportunidades,
+    .Main-img--vapers,
+    .Main-img--relaciones,
+    .Main-img--finanzas {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .Article-h2 {
+        font-size: 1.8rem;
+    }
+
+    .Article-h3 {
+        font-size: 1.4rem;
+    }
+
+    .Article-p {
+        font-size: 1rem;
+    }
+
+    .Article-li {
+        width: 100%;
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .Article-img,
+    .Article-img--article {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .Main-h2--consejos,
+    .Main-h2--formulario,
+    .Main-h2--faq,
+    .Main-h2--acerca-de,
+    .Main-h2--contacto {
+        font-size: 1.6rem;
+        margin: 1rem;
+    }
+
+    .Main-p--consejos,
+    .Main-p--faq,
+    .Main-p--acerca-de {
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+
+    .Main-li--consejos,
+    .Main-li--acerca-de,
+    .Container {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .Main-form {
+        padding: 1.5rem;
+    }
+
+    .Main-input--isActive,
+    .Btn {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    .Footer-h2 {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    .Footer-ul {
+        align-items: center;
+        gap: 5px;
+    }
+
+    .Footer-a {
+        font-size: 1.1rem;
+    }
+
+    .Container-respuesta {
+        font-size: 0.95rem;
+    }
+
+    .Main-figure {
+        width: 90%;
+        height: auto;
+    }
+
+
+}

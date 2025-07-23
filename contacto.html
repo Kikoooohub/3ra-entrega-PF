@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="¿Tienes alguna pregunta o necesitas más información?Quieres recibir notificaciones,cuando publicamos contenido nuevo?Contactanos a traves de este formulario.">
+    <meta name="keywords" content="contacto, formulario, suscripción, email, preguntas, comunicación, DailyBlog">
+    <meta name="geo.region" content="ES">
+    <meta name="geo.placename" content="España">
+    <meta name="author" content="DailyBlog">
+
+    <!--Font Awesome---------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!--Styles CSS-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--JS script------------------------------>
+    <script defer src="./js/script.js"></script>
+
+    <title>Contacto</title>
+</head>
+
+<body class="Body">
+    <header class="Header">
+        <div class="Header-wrapper">
+            <h1 class="HeaderLogoTitle"> <a class="Header-a" href="index.html">
+                    <span class="Header-span">Daily</span>Blog</a>
+
+            </h1>
+        </div>
+        <nav class="Nav-ul">
+            <ul>
+
+                <li class="Nav-li"><a class="Nav-a" href="acerca-de.html">Acerca de</a></li>
+                <li class="Nav-li"><a class="Nav-a" href="faq.html">FAQ</a></li>
+                <li class="Nav-li"><a class="Nav-a" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="Main-section Main-section--contacto">
+            <h2 class="Main-h2 Main-h2--contacto">Quieres recibir notificaciones sobre nuestras noticias?</h2>
+
+            <h2>Dejanos tu email:</h2>
+
+            <form class="Main-form" action="https://formspree.io/f/" method="POST">
+                <label class="Main-label" for="name">Nombre:</label>
+                <input class="Main-input" type="text" id="name" name="name" required>
+                <label class="Main-label" for="email">Email:</label>
+                <input class="Main-input" type="email" id="email" name="email" required>
+                <input class="Main-input--isActive" type="submit" value="Enviar">
+
+            </form>
+
+        </section>
+        <div class="Container-dark" id="theme-toggle">
+            <button class="Container-btn">
+                <i class="fa-solid fa-moon"></i></button>
+        </div>
+    </main>
+
+
+
+
+
+
+    <!--Pie de pagina-->
+    <footer class="Footer">
+        <section class="Footer-section">
+            <h2 class="Footer-h2">Mantente Informado</h2>
+            <ul class="Footer-ul">
+
+
+                <li class="Footer-li">
+                    <a class="Footer-a" href="acerca-de.html">
+                        Acerca de
+                    </a>
+                </li>
+                <li class="Footer-li">
+                    <a class="Footer-a" href="faq.html">
+                        FAQ
+                    </a>
+                </li>
+
+                <li class="Footer-li">
+                    <a class="Footer-a" href=contacto.html>
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+            <ul class="Footer-ul">
+                <li class="Footer-li"><a class="Footer-a" href="https://x.com/" target="_blank"><i
+                            class="fa-brands fa-twitter"></i></a></li>
+                <li class="Footer-li"><a class="Footer-a" href="https://www.facebook.com/" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a></li>
+                <li class="Footer-li"><a class="Footer-a" href="https://www.instagram.com/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+            <div class="Footer-section Footer-section--copyright">
+                <div class="Footer-copyright">&copy; 2025 DailyBlog</div>
+            </div>
+        </section>
+
+    </footer>
+
+</body>
+
+</html>
