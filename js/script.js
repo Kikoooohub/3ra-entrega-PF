@@ -108,46 +108,45 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ------------------- PAGINA POST -------------------
 
-        const posts = {
-            "redes-sociales": {
-                titulo: "¿Por qué son tan adictivas las redes sociales?",
-                imagen: "./img/phoneadict.webp",
-                contenido: "Las redes sociales están diseñadas para captar nuestra atención, algo que las plataformas saben hacer a la perfección. Cada \"me gusta\", cada comentario, cada notificación activa una liberación de dopamina en nuestro cerebro, el neurotransmisor asociado con el placer y la recompensa. Este ciclo de retroalimentación positiva puede resultar tan gratificante que, a medida que los jóvenes obtienen más \"reconocimiento digital\", sienten la necesidad de estar constantemente conectados y buscando más interacción. \n\n\ El problema radica en que este proceso no solo se limita a un uso moderado. En muchos casos, los jóvenes se ven atrapados en un ciclo interminable de revisar sus dispositivos, esperar interacciones y compararse con una versión idealizada de los demás. Es fácil caer en la trampa de medir nuestro valor en función de la cantidad de seguidores, \"me gusta\" o comentarios que recibimos, lo que puede afectar gravemente la autoestima y la salud mental."
-            },
-            "vapers": {
-                titulo: "¿Los vapers seguros o inseguros?",
-                imagen: "./img/girlvape.webp",
-                contenido: "En los últimos años, el vaper se ha convertido en una de las opciones más populares entre los jóvenes. Publicidad atractiva, sabores tentadores y una percepción errónea de que es \"menos dañino\" que el cigarro convencional han contribuido a su auge. Sin embargo, a pesar de su creciente popularidad, el vaper no está exento de riesgos y, en muchos casos, puede ser incluso más peligroso de lo que parece. Aunque el vaper parece ser una alternativa \"segura\" al cigarro tradicional, los riesgos son mucho mayores de lo que muchos jóvenes piensan. La nicotina, los daños respiratorios, los problemas cardíacos y los riesgos a largo plazo son razones suficientes para reconsiderar el uso de estos dispositivos. Es fundamental que los jóvenes estén informados sobre los peligros reales y busquen alternativas más saludables para cuidar su bienestar. La presión social y la moda pueden ser fuertes, pero la salud siempre debe ser lo primero."
-            },
-            "oportunidades": {
-                titulo: "La búsqueda de trabajo para los jóvenes. ¿Una peli de horror?",
-                imagen: "./img/youth.webp",
-                contenido: "En un mundo cada vez más globalizado y competitivo, los jóvenes enfrentan retos importantes al momento de entrar al mercado laboral. Mientras que las oportunidades están al alcance de la mano, el camino hacia el empleo ideal a menudo parece un escenario digno de una película de horror, lleno de obstáculos inesperados. Desde la falta de experiencia hasta la competencia feroz, los jóvenes deben lidiar con numerosos desafíos que ponen a prueba su resiliencia y determinación. Sin embargo, en medio de este panorama complicado, también existen enormes oportunidades en sectores emergentes, el emprendimiento, los programas de pasantías y la educación continua. El truco está en no rendirse ante las dificultades y entender que, aunque el camino puede ser arduo, cada paso que se da es una oportunidad para aprender y crecer."
-            },
-            "finanzas": {
-                titulo: "¿Cómo manejan el dinero la nueva generación? ¿Mejor o peor?",
-                imagen: "./img/money.webp",
-                contenido: "El manejo del dinero entre los jóvenes es un tema complejo y multifacético. Si bien las oportunidades tecnológicas y las nuevas formas de pago han facilitado el acceso a productos y servicios, también han creado nuevos desafíos relacionados con el gasto impulsivo, la deuda y la falta de educación financiera. A medida que los jóvenes se enfrentan a un panorama económico incierto, es crucial que aprendan a gestionar sus finanzas con responsabilidad, aprovechar las herramientas disponibles y, sobre todo, desarrollar una mentalidad que valore el ahorro y la inversión a largo plazo. En última instancia, el manejo adecuado del dinero es una habilidad que puede marcar la diferencia entre alcanzar la independencia financiera o caer en la trampa del consumo sin control."
-            },
-            "relaciones": {
-                titulo: "Evolución o Revolución de Género. ¿Hasta dónde llegará?",
-                imagen: "./img/peoplegroup.webp",
-                contenido: "Para muchos, lo que estamos viviendo hoy en día en cuanto a género no es solo un cambio gradual, sino una auténtica revolución. La lucha por los derechos de las personas LGBTQ+, la visibilidad de las mujeres en todos los ámbitos de la vida y el cuestionamiento de los roles tradicionales de género han dado paso a una nueva era de identidad y reconocimiento. La revolución de género se expresa en la desafiante pregunta de si realmente necesitamos etiquetas para definirnos o si podemos existir más allá de las construcciones binarias de \"masculino\" y \"femenino\".El futuro del género probablemente siga siendo un campo en constante cambio, impulsado tanto por revoluciones como por evoluciones. En última instancia, lo importante es que la sociedad continúe avanzando hacia una mayor equidad, donde todas las identidades de género puedan ser reconocidas, respetadas y celebradas."
-            }
-        };
+const posts = {
+    "redes-sociales": {
+        titulo: "¿Por qué son tan adictivas las redes sociales?",
+        imagen: "./img/phoneadict.webp",
+        contenido: "Las redes sociales están diseñadas para captar nuestra atención, algo que las plataformas saben hacer a la perfección. Cada \"me gusta\", cada comentario, cada notificación activa una liberación de dopamina en nuestro cerebro, el neurotransmisor asociado con el placer y la recompensa. Este ciclo de retroalimentación positiva puede resultar tan gratificante que, a medida que los jóvenes obtienen más \"reconocimiento digital\", sienten la necesidad de estar constantemente conectados y buscando más interacción.El problema radica en que este proceso no solo se limita a un uso moderado. En muchos casos, los jóvenes se ven atrapados en un ciclo interminable de revisar sus dispositivos, esperar interacciones y compararse con una versión idealizada de los demás. Es fácil caer en la trampa de medir nuestro valor en función de la cantidad de seguidores, \"me gusta\" o comentarios que recibimos, lo que puede afectar gravemente la autoestima y la salud mental."
+    },
+    "vapers": {
+        titulo: "¿Los vapers seguros o inseguros?",
+        imagen: "./img/girlvape.webp",
+        contenido: "En los últimos años, el vaper se ha convertido en una de las opciones más populares entre los jóvenes. Publicidad atractiva, sabores tentadores y una percepción errónea de que es \"menos dañino\" que el cigarro convencional han contribuido a su auge. Sin embargo, a pesar de su creciente popularidad, el vaper no está exento de riesgos y, en muchos casos, puede ser incluso más peligroso de lo que parece. Aunque el vaper parece ser una alternativa \"segura\" al cigarro tradicional, los riesgos son mucho mayores de lo que muchos jóvenes piensan. La nicotina, los daños respiratorios, los problemas cardíacos y los riesgos a largo plazo son razones suficientes para reconsiderar el uso de estos dispositivos. Es fundamental que los jóvenes estén informados sobre los peligros reales y busquen alternativas más saludables para cuidar su bienestar. La presión social y la moda pueden ser fuertes, pero la salud siempre debe ser lo primero."
+    },
+    "oportunidades": {
+        titulo: "La búsqueda de trabajo para los jóvenes. ¿Una peli de horror?",
+        imagen: "./img/youth.webp",
+        contenido: "En un mundo cada vez más globalizado y competitivo, los jóvenes enfrentan retos importantes al momento de entrar al mercado laboral. Mientras que las oportunidades están al alcance de la mano, el camino hacia el empleo ideal a menudo parece un escenario digno de una película de horror, lleno de obstáculos inesperados. Desde la falta de experiencia hasta la competencia feroz, los jóvenes deben lidiar con numerosos desafíos que ponen a prueba su resiliencia y determinación. Sin embargo, en medio de este panorama complicado, también existen enormes oportunidades en sectores emergentes, el emprendimiento, los programas de pasantías y la educación continua. El truco está en no rendirse ante las dificultades y entender que, aunque el camino puede ser arduo, cada paso que se da es una oportunidad para aprender y crecer."
+    },
+    "finanzas": {
+        titulo: "¿Cómo manejan el dinero la nueva generación? ¿Mejor o peor?",
+        imagen: "./img/money.webp",
+        contenido: "El manejo del dinero entre los jóvenes es un tema complejo y multifacético. Si bien las oportunidades tecnológicas y las nuevas formas de pago han facilitado el acceso a productos y servicios, también han creado nuevos desafíos relacionados con el gasto impulsivo, la deuda y la falta de educación financiera. A medida que los jóvenes se enfrentan a un panorama económico incierto, es crucial que aprendan a gestionar sus finanzas con responsabilidad, aprovechar las herramientas disponibles y, sobre todo, desarrollar una mentalidad que valore el ahorro y la inversión a largo plazo. En última instancia, el manejo adecuado del dinero es una habilidad que puede marcar la diferencia entre alcanzar la independencia financiera o caer en la trampa del consumo sin control."
+    },
+    "relaciones": {
+        titulo: "Evolución o Revolución de Género. ¿Hasta dónde llegará?",
+        imagen: "./img/peoplegroup.webp",
+        contenido: "Para muchos, lo que estamos viviendo hoy en día en cuanto a género no es solo un cambio gradual, sino una auténtica revolución. La lucha por los derechos de las personas LGBTQ+, la visibilidad de las mujeres en todos los ámbitos de la vida y el cuestionamiento de los roles tradicionales de género han dado paso a una nueva era de identidad y reconocimiento. La revolución de género se expresa en la desafiante pregunta de si realmente necesitamos etiquetas para definirnos o si podemos existir más allá de las construcciones binarias de \"masculino\" y \"femenino\".El futuro del género probablemente siga siendo un campo en constante cambio, impulsado tanto por revoluciones como por evoluciones. En última instancia, lo importante es que la sociedad continúe avanzando hacia una mayor equidad, donde todas las identidades de género puedan ser reconocidas, respetadas y celebradas."
+    }
+};
 
-        const params = new URLSearchParams(window.location.search);
-        const noticia = params.get('noticia');
-        const data = posts[noticia];
+const params = new URLSearchParams(window.location.search);
+const noticia = params.get('noticia');
+const data = posts[noticia];
 
-        if (data) {
-            document.getElementById('post-title').textContent = data.titulo;
-            document.getElementById('post-image').src = data.imagen;
-            document.getElementById('post-image').alt = data.titulo;
-            document.getElementById('post-content').textContent = data.contenido;
-        } else {
-            document.getElementById('post-title').textContent = "Publicación no encontrada";
-            document.getElementById('post-content').textContent = "Lo sentimos, la publicación solicitada no existe.";
-            document.getElementById('post-image').style.display = "none";
-        }
-  
+if (data) {
+    document.getElementById('post-title').textContent = data.titulo;
+    document.getElementById('post-image').src = data.imagen;
+    document.getElementById('post-image').alt = data.titulo;
+    document.getElementById('post-content').textContent = data.contenido;
+} else {
+    document.getElementById('post-title').textContent = "Publicación no encontrada";
+    document.getElementById('post-content').textContent = "Lo sentimos, la publicación solicitada no existe.";
+    document.getElementById('post-image').style.display = "none";
+}
