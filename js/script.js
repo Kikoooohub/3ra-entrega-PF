@@ -26,17 +26,28 @@ preguntas.forEach(pregunta => {
 
 // ------------------- MODO OSCURO -------------------
 
-// Espera a que el DOM esté listo
 document.addEventListener('DOMContentLoaded', () => {
-    // Selecciona el botón de modo oscuro
     const themeToggleBtn = document.getElementById('theme-toggle');
     const body = document.body;
 
-    // Alterna la clase 'dark-mode' en el body al hacer click
+    // Verifica si el modo oscuro estaba activado antes
+    const modo = localStorage.getItem('modo');
+    if (modo === 'oscuro') {
+        body.classList.add('dark-mode');
+    }
+
+    // Alterna modo oscuro y lo guarda en localStorage
     themeToggleBtn.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
+
+        if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('modo', 'oscuro');
+        } else {
+            localStorage.setItem('modo', 'claro');
+        }
     });
 });
+
 
 
 // ------------------- CAROUSEL SLIDER -------------------
@@ -63,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Mueve el carrusel hacia la izquierda y reordena los slides
     function moveCarousel() {
         carousel.style.transition = "transform 1s ease-in-out";
-        carousel.style.transform = `translateX(${-slides[0].offsetWidth}px)`;
+        carousel.style.transform = "translateX(${-slides[0].offsetWidth}px)";
 
         setTimeout(() => {
             let firstSlide = carousel.firstElementChild;

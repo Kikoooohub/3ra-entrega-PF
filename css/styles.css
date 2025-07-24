@@ -41,7 +41,7 @@
     height: 60px;
     padding: var(--spacing-small) 0;
     position: sticky;
-    top: 0;
+    top: 10;
     z-index: 99;
 
 }
@@ -60,7 +60,8 @@
 }
 
 .Header-span {
-    color: #03005b;
+    color: #2621ae;
+    font-weight: 700;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     text-decoration: none;
     list-style: none;
@@ -75,6 +76,7 @@
 .Nav {
     padding: 0;
     margin: 0;
+   
 
 }
 
@@ -87,6 +89,7 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
+   
 
 }
 
@@ -249,7 +252,7 @@ left:25px;
 }
 
 .Main-h2 {
-    font-size: 1.19rem;
+    font-size: 1rem;
     color: #000;
     font-weight: 700;
 }
@@ -1622,6 +1625,43 @@ main.dark-mode {
         font-size: 1.2rem;
     }
 
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+    
+    .Main-section--contacto{
+        
+         flex-direction: row;
+
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+       padding-bottom: 20px;
+    }
+    .Main-form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        max-width: 80%;
+    }
+
+    .Main-label {
+        width: 100%;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .Main-input {
+        flex: 1 1 40%;
+        min-width: 250px;
+    }
+
+    .Main-input--isActive {
+        flex: 1 1 100%;
+        max-width: 200px;
+        margin-top: 10px;
+    }
 }
 
 
