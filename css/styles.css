@@ -42,10 +42,10 @@
     padding: var(--spacing-small) 0;
     position: fixed;
     width: 100%;
-    top:0;
+    top: 0;
 
     z-index: 99;
-    
+
 
 }
 
@@ -79,7 +79,7 @@
 .Nav {
     padding: 0;
     margin: 0;
-   
+
 
 }
 
@@ -92,7 +92,7 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
-   
+
 
 }
 
@@ -134,14 +134,15 @@
     align-items: center;
     justify-content: center;
     padding: 40px;
-    margin: 40px;
-    
+    margin: 20px;
+
     border-radius: 10px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 
-    
-    
+
+
 }
+
 .Wrapper-h2 {
     text-align: center;
     margin: 20px 0;
@@ -165,7 +166,7 @@
 
 .Main {
     background-color: var(--color-secondary);
-   
+
 }
 
 
@@ -275,7 +276,6 @@ left:25px;
     font-size: 1rem;
     color: #000;
     font-weight: 700;
-    
 }
 
 /*.Main-section-ul-li-a-btn {
@@ -382,7 +382,7 @@ left:25px;
 .Main-h2--publicaciones {
     font-size: 2.8rem;
     font-weight: 800;
-    margin: px;
+    margin: 20px;
     text-align: center;
     color: var(--color-text);
     position: relative;
@@ -1152,7 +1152,7 @@ main.dark-mode {
 .dark-mode .Main-img--relaciones,
 .dark-mode .Article-img,
 .dark-mode .Article-img--article {
-    box-shadow: 0 5px 10px rgba(255,255,255,0.1) !important;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.1) !important;
     border-color: #444 !important;
 }
 
@@ -1179,20 +1179,21 @@ main.dark-mode {
     cursor: pointer !important;
 }
 
-.dark-mode .Main-input--isActive{
+.dark-mode .Main-input--isActive {
     background-color: #333 !important;
     color: #fff !important;
     border-color: #555 !important;
 }
 
-.dark-mode .Main--acerca-de{
+.dark-mode .Main--acerca-de {
     background-color: #121212 !important;
     color: #ffffff !important;
 }
 
-.dark-mode .Main-p{
-    box-shadow: 0 5px 10px rgba(255,255,255,0.1) !important;
+.dark-mode .Main-p {
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.1) !important;
 }
+
 /* Estilos para el botón */
 .Container-btn {
     background-color: black;
@@ -1634,17 +1635,19 @@ main.dark-mode {
     }
 
 }
+
 @media (min-width: 768px) and (max-width: 1200px) {
-    
-    .Main-section--contacto{
-        
-         flex-direction: row;
+
+    .Main-section--contacto {
+
+        flex-direction: row;
 
         gap: 15px;
         justify-content: center;
         align-items: center;
-       padding-bottom: 20px;
+        padding-bottom: 20px;
     }
+
     .Main-form {
         flex-direction: row;
         flex-wrap: wrap;
@@ -1853,78 +1856,77 @@ main.dark-mode {
     }
 
     .Main--acerca-de,
-    .Main-section--contacto
-    {
-    margin: 40px;
-    padding: 40px;
-}
+    .Main-section--contacto {
+        margin: 40px;
+        padding: 40px;
+    }
 
-.Main-section--faq {
-    padding: 40px;
+    .Main-section--faq {
+        padding: 40px;
 
-}
+    }
 
-.Main-ul--acerca-de {
-    width: 90%;
-}
+    .Main-ul--acerca-de {
+        width: 90%;
+    }
 
-.Main-li--acerca-de {
-    width: 80%;
-    font-size: 1.4rem;
-    padding: 25px;
-}
+    .Main-li--acerca-de {
+        width: 80%;
+        font-size: 1.4rem;
+        padding: 25px;
+    }
 
-.Main-p--acerca-de {
-    font-size: 1.1rem;
-    padding: 35px;
-}
+    .Main-p--acerca-de {
+        font-size: 1.1rem;
+        padding: 35px;
+    }
 
-.Main-figure {
-    width: 50%;
-    height: auto;
-}
+    .Main-figure {
+        width: 50%;
+        height: auto;
+    }
 
-.Container {
-    width: 90%;
-    max-height: none;
-}
+    .Container {
+        width: 90%;
+        max-height: none;
+    }
 
-.Container-pregunta {
-    font-size: 1.5rem;
-}
+    .Container-pregunta {
+        font-size: 1.5rem;
+    }
 
-.Container-respuesta {
-    font-size: 1.1rem;
-    min-width: 600px;
-}
+    .Container-respuesta {
+        font-size: 1.1rem;
+        min-width: 600px;
+    }
 
-.Footer {
-    padding: 22px;
-}
+    .Footer {
+        padding: 22px;
+    }
 
-.Footer-h2 {
-    font-size: 1.6rem;
-    padding: 6px;
-}
+    .Footer-h2 {
+        font-size: 1.6rem;
+        padding: 6px;
+    }
 
-.Footer-section {
-    margin: 12px;
-    padding: 12px;
-    gap: 6px;
-}
+    .Footer-section {
+        margin: 12px;
+        padding: 12px;
+        gap: 6px;
+    }
 
-.Footer-ul {
-    gap: 12px;
-}
+    .Footer-ul {
+        gap: 12px;
+    }
 
-.Footer-li {
-    margin: 8px;
-    font-size: 1.1rem;
-}
+    .Footer-li {
+        margin: 8px;
+        font-size: 1.1rem;
+    }
 
-.Footer-a {
-    font-size: 1.3rem;
-}
+    .Footer-a {
+        font-size: 1.3rem;
+    }
 
 }
 
@@ -1958,6 +1960,10 @@ main.dark-mode {
         border: 1px solid #fff
     }
 
+    .Wrapper {
+        margin: 14rem;
+    }
+
     .Main-section {
         padding: 20px;
         flex-direction: column;
@@ -1984,6 +1990,7 @@ main.dark-mode {
         display: block;
         width: fit-content;
     }
+
 
 
     .Main-ul--publicaciones {
@@ -2124,11 +2131,18 @@ main.dark-mode {
 
     /* FAQ / Acordeon */
     .Main-section--faq {
-        padding: 30px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 14rem;
+
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .Main-h2--faq {
-        font-size: 2.2rem;
+        font-size: 1rem;
     }
 
     .Main-p--faq {
@@ -2139,7 +2153,13 @@ main.dark-mode {
     .Container {
         width: 90%;
         max-height: none;
-        padding: 15px;
+        display: flex;
+        margin: 14rem;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+
     }
 
     .Container-respuesta {
